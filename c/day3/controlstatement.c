@@ -4,6 +4,7 @@
    
    
    */
+
 #include<stdio.h>
 
 int main(){
@@ -21,7 +22,8 @@ int main(){
           else {
             printf("We are sorry");
           }
-        
+         
+ 
    return 0;
    }
 
