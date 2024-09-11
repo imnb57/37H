@@ -12,9 +12,12 @@ int main(){
        int limit = 18;
        printf("please enter your age \n");
        scanf("%d",&age);
-
-       if (age<limit){
-        printf("You are not eligible");
+       
+       if (age == limit){
+         printf("You are not eligible");
+        if(age < limit){
+            printf("You are not eligible");
+        }
        }
           else if(age>limit && age <45){
             printf("You are eligible");
@@ -23,7 +26,6 @@ int main(){
             printf("We are sorry");
           }
          
- 
    return 0;
    }
 
