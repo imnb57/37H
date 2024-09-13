@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    // Program to find the area of a rectangle
+    // Program to find the area of a triangle
     
     int width;
     int length;
@@ -18,7 +18,7 @@ int main(){
     area = length * width;
 
     // Display the result
-    printf("The area of the rectangle is: %d\n", area);
+    printf("The area of the triangle is: %d\n", area);
 
     return 0;
 }
