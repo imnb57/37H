@@ -12,7 +12,6 @@ int main(){
     int howMany;
     float afterDiscount;
     float finalPrice;
-    
     printf("How many items did you purchase\n");
     scanf("%d",&howMany);
 
@@ -31,6 +30,5 @@ int main(){
         finalPrice = totalPrice - afterDiscount;
         printf("Your final price after discount is $%.2f",finalPrice);
     }
-
     return 0;
 }
