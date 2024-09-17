@@ -26,11 +26,14 @@ int main(){
     float aamount;
     char  choice;
     float new;
+    
+
+ 
     printf("What service would you like to use\n");
     printf("Enter 'w' to withdraw, 'a' to add funds,'c' to check funds\n");
     scanf("%c",&choice);
 
-   
+    
     if(choice == 'c'){
         printf("Your current amount is $%.2f\n",current);   
     }
