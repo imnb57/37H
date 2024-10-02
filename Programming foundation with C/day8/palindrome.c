@@ -1,12 +1,23 @@
-#include<stdio.h>
-int check(int);
-int a = 121;
+#include <stdio.h>
 
-int main(){
-
+int isPalindrome(int num) {
+    int original = num, reversed = 0, remainder;
+    
+    while (num != 0) {
+        remainder = num % 10;
+        reversed = reversed * 10 + remainder;
+        num /= 10;
+    }
+    return original == reversed;
 }
-int check(int a ){
-    int res = a%10;
-    check(res);
 
+int main() {
+    int num = 121;
+    
+    if (isPalindrome(num))
+        printf("%d is a palindrome.\n", num);
+    else
+        printf("%d is not a palindrome.\n", num);
+    
+    return 0;
 }

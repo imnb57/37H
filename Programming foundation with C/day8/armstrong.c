@@ -1,20 +1,23 @@
-#include<stdio.h>
-int armstrongcheck();
+#include <stdio.h>
 
-int main(){
-    int num = armstrongcheck();
-    if(!num){
-        printf("The number is armstrong");
+int isArmstrong(int num) {
+    int original = num, remainder, result = 0;
+    
+    while (num != 0) {
+        remainder = num % 10;
+        result += remainder * remainder * remainder;
+        num /= 10;
     }
-    else{
-        printf("the number is not armstrong");
-    }
-    return 0;
+    return result == original;
 }
-int armstrongcheck(){
-    int num;
-    printf("Enter a three digit number\n");
-    scanf("%d",&num);
-     
-    return num;
+
+int main() {
+    int num = 153;
+    
+    if (isArmstrong(num))
+        printf("%d is an Armstrong number.\n", num);
+    else
+        printf("%d is not an Armstrong number.\n", num);
+    
+    return 0;
 }
